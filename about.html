@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>About</title>
+	<link rel="stylesheet" type="text/css" href="karandeep.css">
+	<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	 <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+</head>
+<body>
+	<div class = "container">
+		<div class = "header clearfix">
+				<nav>
+					<ul class = "nav nav-pills pull-right">
+						<li role = "presentation" class = "active">
+							<a href = "/"><i class = "fa fa-home" ></i> Home</a>
+
+						</li>
+						<li role = "presentation">
+							<a href = "#contact" data-toggle = "modal" data-target="#contactModal"><i class = "fa fa-envelope"></i> Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<img src = "face.jpg" alt = "My Face" style="width:260x;height:240px;float:left;">
+			<p>Hi, I'm Karandeep!</p>
+			<p>		I'm a 21 year old software developer/data scientist who just graduated from Binghamton University with a degree in Mathematics and a minor in Computer Science. I'm currently seeking work anywhere in the United States. Having always been passionate applying mathematics and critical thinking through programming to solve real world issues, I focused much of my college career on building optimal data structures and machine learning algorithms.
+			</p>
+			<p>	</t>	Highlighting some of my latest accomplishments, I worked for Live in Bing last summer, a real estate management company. Using Python, I created and optimized two neural networks responsible for estimating housing prices based on the house's features (location, number of bedrooms, etc). I also spent this last year as Programming Vice President of the Data Science and Analytics club in Binghamton where I created and demonstrated tutorials to show students various different aspects analyzing and visualizing data.
+			</p>
+
+			<p>		Prior to this year, I worked for Binghamton Center of Technology, designing lesson plans to entertain and educate high schoolers on using Unity (a game development platform) to spread interest in coding. Now that I have graduated, I'm looking forward to the exciting challenges I face with my future employment! If you think I would be a good fit for your company, please click the "contact" button on the top of the page and reach out to me! Below is some fun, non-career related interests of mine if you would like to keep reading!</p>
+			<p>		I have been a part of the Ultimate Frisbee Community for 8 years now, competing at the high school, college, and club level. I have served as a captain on the Binghamton University team, and 2 summers ago, I even founded Pink Pear, a club team for Binghamton University alumni. Since graduating, I hope to train hard enough over this coming year to make it onto one of the top club teams in the region!</p>
+			<p>So thanks for coming to my site and finding out all about me! If you have any questions, or would like to hear more about my professional experience, please feel free to contact me!
+			</p>
+			<img src = "team.jpg" alt = "My Team" style = "width: 90%;height: 80%; padding-bottom:20px">
+			<div style="clear: both"></div>
+			<footer class = "footer" >
+				<p>&copy; 2019 Karandeep Ahluwalia</p>
+			</footer>
+			<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+		  	<div class="modal-dialog" role="document">
+		     	<div class="modal-content">
+		        	<div class="modal-body">
+		          		<form id="contactForm" data-toggle="validator" method="POST" action="https://formspree.io/kahluwa1@binghamton.edu">
+		            		<div class="form-group">
+		              		<label for="my-name" class="control-label">To:</label>
+		              		<input type="text" class="form-control" id="to" placeholder="Karandeep Ahluwalia" disabled>
+		            		</div>
+		            		<div class="form-group">
+		              		<label for="sender-name" class="control-label">From:</label>
+		              		<input type="email" name="_replyto" class="form-control" id="from" placeholder="you@company.com" data-error="I need a valid email so I can get back to you!" required>
+		              		<div class="help-block with-errors"></div>
+		            		</div>
+		            		<div class="form-group">
+		             			<label for="message-text" class="control-label">Your Message:</label>
+		              		<textarea class="form-control" name="message" id="message-text" rows="10"></textarea>
+		            		</div>
+		            		<div class="modal-footer">
+		              		<input type="text" name="_gotcha" style="display:none" />
+		              		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		              		<button id="send" type="submit" class="btn btn-primary">Send</button>
+		              		<input type="hidden" name="_next" value="thanks.html" />
+		              	</div>
+	          		</form>
+	          	</div>
+	        </div>
+	    </div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+	    <!-- bootstrap js -->
+	<script src="js/bootstrap.min.js"></script>
+<!-- bootbox js -->
+	<script src="js/bootbox.min.js"></script>
+</body>
+</html>
