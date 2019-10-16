@@ -22,6 +22,9 @@ p {
     font-size: 20px;
     font-weight: normal;
 }
+.row-centered {
+text-align:center;
+}
 .container {
   max-width: 730px;
 }
